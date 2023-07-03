@@ -9,7 +9,18 @@ import SwiftUI
 
 struct iPadLayoutView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            NavigationLink {
+                Text("New secondary")
+            } label: {
+                Text("Hello, world!")
+            }
+            .navigationTitle("Primary")
+            
+            Text("Secondary")
+            
+            Text("Tertiary")
+        }
     }
 }
 
